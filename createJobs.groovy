@@ -6,7 +6,7 @@ pipelineJob('theme-park-job') {
                     remote {
                         url 'https://github.com/velizarvel/spring-boot-api-for-docker-jenkins-awt.git'
                     }
-                    branch 'master'
+                    branch 'main'
                 }
             }
         }
