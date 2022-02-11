@@ -1,8 +1,14 @@
-pipelineJob('pipelineJob') {
+pipelineJob('theme-park-job') {
     definition {
-        cps {
-            script(readFileFromWorkspace('pipelineJob.groovy'))
-            sandbox()
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/velizarvel/spring-boot-api-for-docker-jenkins-awt.git'
+                    }
+                    branch 'master'
+                }
+            }
         }
     }
 }
